@@ -1,0 +1,78 @@
+\input{_header}
+
+\input{sections/lexique}
+
+\title{\Huge{Titre}}
+\author{Rapport d'élève ingénieur\\
+Alternance de $3^{\text{ème}}$ année\\
+Filière F4 : Modélisation mathématique et science des données\\
+Présenté par : Louis \textsc{Encinas}\\\\
+Tuteur ISIMA : Renaud \textsc{Chicoisne}\\
+Tuteur entreprise : Sébastien \textsc{Andre}\\\\\\\\
+Date soutenance : ??\\
+Durée du stage : ??}
+\date{\today}
+
+\begin{document}
+
+\begin{titlepage}
+\AddToShipoutPicture*{
+        \AtUpperLeftCorner{1.5cm}{1cm}{\includegraphics[width=8cm]{image/isima.png}}
+        \AtUpperRightCorner{1.5cm}{1cm}{\includegraphics[width=8cm]{image/A&D.jpg}}
+    }
+\maketitle
+\end{titlepage}
+
+\shipout\null
+
+\pagenumbering{roman}
+
+\input{sections/remerciement}
+\newpage
+
+\input{sections/resume}
+\newpage
+
+\tableofcontents
+\addcontentsline{toc}{section}{Table des matières}
+\newpage
+
+\listoffigures
+\addcontentsline{toc}{section}{Table des figures}
+
+\lstlistoflistings
+\addcontentsline{toc}{section}{Table des éléments de code}
+\newpage
+
+\pagenumbering{arabic}
+
+\input{sections/introduction}
+\newpage
+
+\input{sections/partie_1}
+\newpage
+
+\input{sections/partie_2}
+\newpage
+
+\input{sections/partie_3}
+\newpage
+
+\input{sections/conclusion}
+\newpage
+
+\pagenumbering{Roman}
+\bibliographystyle{abbrv}
+\bibliography{bibliography}
+\addcontentsline{toc}{section}{Références}
+\newpage
+
+\printglossaries
+
+\input{sections/nomenclature}
+\newpage
+
+\input{sections/annexe.tex}
+\addcontentsline{toc}{section}{Annexe}
+
+\end{document}
